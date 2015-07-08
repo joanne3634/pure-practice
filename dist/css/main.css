@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  line-height: 1.7em;
+  font-size: 17px;
+  color: #7f8c8d; }
+
+.pure-img-responsive {
+  max-width: 100%;
+  height: auto; }
+
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need
+ */
+.l-box {
+  padding: 1em; }
+
+.l-box-lrg {
+  padding: 2em;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+.is-center {
+  text-align: center; }
+
+/*
+ * -- MENU STYLES --
+ * I want to customize how my .pure-menu looks at the top of the page
+ */
+.home-menu {
+  padding: 0.5em;
+  text-align: center;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #2d3e50; }
+
+.pure-menu.pure-menu-fixed {
+  /* Fixed menus normally have a border at the bottom. */
+  border-bottom: none;
+  /* I need a higher z-index here because of the scroll-over effect. */
+  z-index: 4; }
+
+.home-menu .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%; }
+
+.home-menu .pure-menu-selected .pure-menu-link, .home-menu .pure-menu-selected .pure-menu-link:visited {
+  color: #fff; }
+
+.home-menu .pure-menu-selected .pure-menu-link:hover, .home-menu .pure-menu-selected .pure-menu-link:focus {
+  color: #AECFE5; }
+
+.home-menu a {
+  color: #6FBEF3; }
+
+.home-menu li a:hover,
+.home-menu li a:focus {
+  background: none;
+  border: none;
+  color: #AECFE5; }
+
+.content-wrapper {
+  /* These styles are required for the "scroll-over" effect */
+  position: absolute;
+  width: 100%;
+  min-height: 12%;
+  /*z-index: 2;*/
+  /*background: white;*/ }
+
+.footer {
+  background: #2D3E50;
+  display: block; }
+
+.custom-wrapper {
+  background-color: #2D3E50;
+  -webkit-font-smoothing: antialiased;
+  height: 2.8em;
+  overflow: hidden;
+  -webkit-transition: height 0.5s;
+  transition: height 0.5s; }
+
+.custom-wrapper .pure-menu-heading {
+  padding: 10px 1em; }
+
+.custom-wrapper .pure-menu-heading {
+  color: white;
+  font-weight: 400;
+  font-size: 120%; }
+
+.custom-wrapper.open {
+  height: 17em; }
+
+.custom-menu-3 {
+  text-align: right; }
+
+.custom-toggle {
+  width: 34px;
+  height: 34px;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: none;
+  margin-top: 5px;
+  margin-right: 5px; }
+
+.custom-toggle .bar {
+  background-color: #777;
+  display: block;
+  width: 20px;
+  height: 2px;
+  border-radius: 100px;
+  position: absolute;
+  top: 18px;
+  right: 7px;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+.custom-toggle .bar:first-child {
+  -webkit-transform: translateY(-6px);
+  -ms-transform: translateY(-6px);
+  transform: translateY(-6px); }
+
+.custom-toggle.x .bar {
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.custom-toggle.x .bar:first-child {
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg); }
+
+@media (max-width: 47.999em) {
+  .custom-menu-3 {
+    text-align: left; }
+  .custom-toggle {
+    display: block; } }
